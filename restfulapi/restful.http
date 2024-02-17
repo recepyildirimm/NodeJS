@@ -1,0 +1,67 @@
+
+@BASE_URL =http://localhost:3000/api
+
+
+###
+GET {{BASE_URL}}/users
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTI4Mzk4ZDgxMjgxNjQyZTgwZTI3NWUiLCJlbWFpbCI6ImRlbmVtZTFAZ21haWwuY29tIiwiaWF0IjoxNjk3MTM1MDQxLCJleHAiOjE2OTcyMDcwNDF9.7eYgskfo9WRXTPdKIaWO4pgrgkXMSLaP0tEuL7DQ3yE
+
+
+
+###
+DELETE  {{BASE_URL}}/users/deleteAll
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTI4Mzk4ZDgxMjgxNjQyZTgwZTI3NWUiLCJlbWFpbCI6ImRlbmVtZTFAZ21haWwuY29tIiwiaWF0IjoxNjk3MTM1MDQxLCJleHAiOjE2OTcyMDcwNDF9.7eYgskfo9WRXTPdKIaWO4pgrgkXMSLaP0tEuL7DQ3yE
+
+
+
+###
+DELETE {{BASE_URL}}/users/me
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTI4MzEzMmY2M2UzMmUyZDA0MDlhYmEiLCJlbWFpbCI6ImRlbmVtZTFAZ21haWwuY29tIiwiaWF0IjoxNjk3MTM0OTY0LCJleHAiOjE2OTcyMDY5NjR9.dVQ-SR8KEdONDcOQaOuvIf8_xFj6WyWFynGJhLB809M
+
+###
+DELETE {{BASE_URL}}/users/6523fcfde8658b68f76398b2
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTI4Mzk4ZDgxMjgxNjQyZTgwZTI3NWUiLCJlbWFpbCI6ImRlbmVtZTFAZ21haWwuY29tIiwiaWF0IjoxNjk3MTM1MDQxLCJleHAiOjE2OTcyMDcwNDF9.7eYgskfo9WRXTPdKIaWO4pgrgkXMSLaP0tEuL7DQ3yE
+
+
+###
+POST {{BASE_URL}}/users 
+Content-Type: application/json
+
+{
+    "isim":"Recep",
+    "email":"deneme12@gmail.com",
+    "userName":"deneme12",
+    "sifre": "123456"
+}
+
+
+###
+POST {{BASE_URL}}/users/giris
+Content-Type: application/json
+
+{
+    "email":"deneme1@gmail.com",
+    "sifre": "123456"
+}
+
+
+###
+PATCH {{BASE_URL}}/users/6523fcfde8658b68f76398b2
+Content-Type: application/json
+
+{
+    "isim":"yenideneme",
+    "sifre":"yenii"
+    
+}
+
+###
+PATCH {{BASE_URL}}/users/me
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTI4MzEzMmY2M2UzMmUyZDA0MDlhYmEiLCJlbWFpbCI6ImRlbmVtZTFAZ21haWwuY29tIiwiaWF0IjoxNjk3MTMyOTI1LCJleHAiOjE2OTcyMDQ5MjV9.CEA_nSwsbz5v664KoB7VY1lLsViO4ZYn5ClG_Gn1kO8
+
+{
+    "isim":"receppp",
+    "sifre":"123456"
+    
+}
